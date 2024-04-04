@@ -1,0 +1,167 @@
+/* 
+seletor{
+    propriedade:valor;                   
+}
+ */
+body{
+    background-color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.home{
+    background-color: #003366;
+}
+
+h1{
+     color: #ffffff;  
+     font-size: 48px; 
+     margin-top: 0;
+}
+
+h2{
+    color:#ffffff;
+    font-size: 32px;
+}
+
+.navegacao{
+ 
+    /*Largura*/
+    width: 680px;   
+    margin-top: 160px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+   /*Formatando os links da area navegaçao*/
+.navegacao a{
+    margin-left: 18px;
+    margin-right: 18px;
+}
+
+
+.header{
+    background-image: url(img/background-imc.jpg);
+    background-size: cover; /* Faz com que a imagem cubra toda a area */
+    text-align: center;
+     
+    /*  Espaçamento interno  */
+    padding-top: 75px;
+    padding-bottom: 75px;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+
+.content{
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    color: #555555;
+}
+
+
+.imc{
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.imc input{
+    width:300px; /*largura*/
+    height: 30px; /*altura*/
+    border-radius: 3px; /*Arredondamento*/
+    border: 1px #cccccc solid;
+    margin-bottom: 10px;
+    box-sizing: border-box; /* Faz com que o elemento nao ultrapasse as dimensoes devido a padding e boreder */
+    
+}
+
+.imc button{
+    width: 130px;
+    height: 30px;
+    border-radius: 3px;
+    border: nome;
+    background-color: #003366;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/*mudar a cor ao passar o mosue*/
+.imc button:hover{
+    background-color: rgb(63, 1, 1);
+}
+
+
+.imc table{
+    width: 350px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.imc tr{
+    background-color: #d9d9d9;
+}
+
+.imc th{
+    background-color: #003366;
+    color: #ffffff;
+}
+
+.imc tr:hover{
+   color: #003366;
+} 
+
+.footer{
+    background-color:#003366 ;
+    color:#ffffff;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer a{
+    color:#ffffff;
+
+}
+
+/* Media Queries - Transforma os tamanhos de tela */
+@media (max-width: 768px){
+
+    h1{
+        font-size: 32px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+
+    .header{
+        padding-top: 90px;
+        padding-bottom: 90px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .content{
+        width: 90%;
+    }
+
+    .imc{
+        flex-direction: column;
+        row-gap: 15px; /*espaço entre as linhas*/
+    }
+
+    .imc table, .imc imput {
+        width:100%;
+    }
+}
+
+#result{
+    font-size: 15px;
+    color:rgb(63, 1, 1);
+}
